@@ -4,9 +4,11 @@
 
 <div align="center">
   <a href="https://github.com/webpack/webpack">
-    <img width="200" height="200"
-      src="https://webpack.js.org/assets/icon-square-big.svg">
+    <img width="200" height="200" alt="Webpack" src="https://webpack.js.org/assets/icon-square-big.svg" />
   </a>
+
+  <img height="200" src="./docs/wasm-gopher.png" alt="Go Gopher with WASM logo" />
+
   <h1>Golang WebAssembly Async Loader</h1>
   <p>Generates a WASM package from Golang and provides an async interface for working with it</p>
   <p>@fiedka/golang-wasm-async-loader is a fork of golang-wasm-async-loader updated for Golang up to v1.17</p>
