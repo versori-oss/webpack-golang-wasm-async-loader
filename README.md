@@ -149,7 +149,7 @@ MIT
 Aaron Powell (updates up to Go 1.15 by Mark Hughes)
 
 [build]: https://img.shields.io/github/actions/workflow/status/fiedka/webpack-golang-wasm-async-loader/buid.yml
-[build-url]: https://github.com/fiedka/golang-wasm-async-loader/actions
+[build-url]: https://github.com/fiedka/webpack-golang-wasm-async-loader/actions
 
 [npm]: https://img.shields.io/npm/v/@fiedka/golang-wasm-async-loader.svg
 [npm-url]: https://npmjs.com/package/@fiedka/golang-wasm-async-loader
