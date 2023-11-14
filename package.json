@@ -1,11 +1,12 @@
 {
-  "name": "@fiedka/golang-wasm-async-loader",
-  "version": "4.0.0",
+  "name": "@versori/golang-wasm-async-loader",
+  "version": "4.1.0",
   "description": "Golang Wasm loader for webpack that generates an async pattern for working with Go's WebAssembly output",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "build:watch": "tsc --watch"
+    "build:watch": "tsc --watch",
+    "ar-login": "npx google-artifactregistry-auth"
   },
   "keywords": [
     "go",
@@ -28,3 +29,4 @@
     "node": ">= 8.0.0"
   }
 }
+

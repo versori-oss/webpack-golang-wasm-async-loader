@@ -17,7 +17,7 @@
 <h2 align="center">Install</h2>
 
 ```bash
-npm install --save-dev @fiedka/golang-wasm-async-loader
+npm install --save-dev @versori/golang-wasm-async-loader
 ```
 
 This is a loader for [webpack](https://webpack.js.org/) that is used for generating [WebAssembly](https://webassembly.org/) (aka WASM) bundles from [Go](https://golang.org).
@@ -71,23 +71,23 @@ import (
 )
 
 func add(i []js.Value) (interface{},error) {
-	ret := 0
+ ret := 0
 
-	for _, item := range i {
-		val, _ := strconv.Atoi(item.String())
-		ret += val
-	}
+ for _, item := range i {
+  val, _ := strconv.Atoi(item.String())
+  ret += val
+ }
 
-	return ret, nil
+ return ret, nil
 }
 
 func main() {
-	c := make(chan struct{}, 0)
+ c := make(chan struct{}, 0)
 
-	gobridge.RegisterCallback("add", add)
-	gobridge.RegisterValue("someValue", "Hello World")
+ gobridge.RegisterCallback("add", add)
+ gobridge.RegisterValue("someValue", "Hello World")
 
-	<-c
+ <-c
 }
 ```
 
@@ -112,18 +112,34 @@ Examples are provided for a CLI using NodeJS and for web using either React or S
 To make an example stand-alone, copy of the corresponding example to a new directory (outside the plugin directory) and then modify the example's `webpack.config.js` so that the `.go` loader refers to this plugin. Then add it to the example's dependencies as follows.
 
 For use with **Go 1.13**, use happybeing's v1.0.6 of the plugin:
+
 ```bash
 npm add --save-dev golang-wasm-async-loader2@1.0.6`
 ```
 
 For use with **Go 1.15**, use happybeing's v1.1.0 of the plugin:
+
 ```bash
 npm add --save-dev golang-wasm-async-loader2@1.1.0`
 ```
 
 For use with **Go 1.16**, use happybeing's v3.0.2 of the plugin:
+
 ```bash
 npm add --save-dev @fiedka/golang-wasm-async-loader@3.0.2`
+```
+
+## Publishing
+
+This is configured to publish to @versori/golang-wasm-async-loader hosted by Versori.
+To publish a new version update `package.json` and run the following commands
+
+```bash
+npm run ar-login
+npm install
+npm run build
+npm pack
+npm publish
 ```
 
 ## Environment
@@ -131,15 +147,19 @@ npm add --save-dev @fiedka/golang-wasm-async-loader@3.0.2`
 To build your project (and the examples) you will need the GOROOT environment variable set. So for example if using the bash shell:
 
 node example:
+
 ```bash
 GOROOT=`go env GOROOT` npm run predemo
 npm run demo
 ```
+
 web example (with hot reloading):
+
 ```bash
 GOROOT=`go env GOROOT` npm run build
 GOROOT=`go env GOROOT` npm run start
 ```
+
 # Licence
 
 MIT
