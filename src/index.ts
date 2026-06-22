@@ -5,7 +5,7 @@ import {execFile} from "child_process";
 
 export const getGoBin = (root: string) => join(root, "bin", "go");
 
-export const getGoWasmExec = (root: string) => join(root, "misc", "wasm", "wasm_exec.js");
+export const getGoWasmExec = (root: string) => join(root, "lib", "wasm", "wasm_exec.js");
 
 function loader(this: webpack.LoaderContext<any>, contents: string) {
   const cb = this.async();

@@ -11,7 +11,7 @@
 
   <h1>Golang WebAssembly Async Loader</h1>
   <p>Generates a WASM package from Golang and provides an async interface for working with it</p>
-  <p>@fiedka/golang-wasm-async-loader is a fork of golang-wasm-async-loader updated for Golang up to v1.17</p>
+  <p>@versori/golang-wasm-async-loader is a fork of golang-wasm-async-loader updated for Golang up to v1.26</p>
 </div>
 
 <h2 align="center">Install</h2>
@@ -166,7 +166,7 @@ MIT
 
 # Credit
 
-Aaron Powell (updates up to Go 1.15 by Mark Hughes)
+Aaron Powell (updates up to Go 1.15 by Mark Hughes, Go 1.26 support added)
 
 [build]: https://img.shields.io/github/actions/workflow/status/fiedka/webpack-golang-wasm-async-loader/buid.yml
 [build-url]: https://github.com/fiedka/webpack-golang-wasm-async-loader/actions
